@@ -1,0 +1,730 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Rajdhani', sans-serif;
+    text-transform: uppercase !important;
+}
+
+body,
+html {
+    scroll-behavior: smooth;
+}
+
+.creeping_btn {
+    color: white;
+    background-color: #7060fe;
+    border: none;
+}
+
+@media (min-width: 1200px) {
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl {
+        max-width: 1300px;
+    }
+}
+
+p {
+    margin-bottom: 0!important;
+}
+
+a {
+    color: white;
+    font-weight: 700;
+}
+
+a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+.font-weigth {
+    font-weight: 700;
+}
+
+
+/**start header*/
+
+header {
+    background-image: url('../wallpap/hero.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.header-content {
+    background: radial-gradient(500px, rgba(0, 0, 0, .5), #1f2334);
+}
+
+.header-content .lang-player .row {
+    justify-content: space-between;
+    padding: .5rem 0;
+    align-content: center;
+    flex-wrap: nowrap;
+}
+
+.header-content .lang-player .language {
+    position: relative;
+}
+
+.header-content .lang-player .row select {
+    background-color: transparent;
+    color: white;
+    margin-top: 10px;
+    font-size: 1.1rem;
+    padding-left: 35px;
+    cursor: pointer;
+    border: none;
+}
+
+.header-content .lang-player .row select option {
+    color: black;
+    font-weight: 700;
+}
+
+.header-content .language .global {
+    position: absolute;
+    top: 10px;
+    color: white;
+    left: 7px;
+    cursor: pointer;
+}
+
+.header-content .lang-player .row button {
+    color: white;
+    padding: 10px 15px;
+    background-color: #343a40;
+    border: none;
+}
+
+.navbar.scrolled {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    border-bottom: 2px solid #210dda;
+}
+
+.navbar {
+    background-color: #7060fe;
+    color: white;
+    z-index: 55;
+    transition: 1s;
+}
+
+.navbar-light .navbar-toggler {
+    border-color: rgb(0 0 0 / 0%);
+}
+
+.navbar-light .navbar-nav .active>.nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show>.nav-link,
+.navbar-light .navbar-nav .nav-link {
+    color: white;
+    font-weight: 700;
+    margin-left: 10px;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: white;
+}
+
+nav .player_title .player_img {
+    border-radius: 10px;
+    overflow: hidden;
+    border: 3px solid white;
+    background-color: white;
+    width: 40px;
+    height: 40px;
+    transform: rotate( 45deg);
+    margin-left: 10px;
+    position: relative;
+}
+
+nav .player_title .player_img img {
+    transform: rotate(-45deg);
+    position: absolute;
+    left: 8px;
+    top: -4px;
+}
+
+
+/*end of nav bar**/
+
+
+/*header content*/
+
+header .header-content {
+    color: white;
+}
+
+header .header-content h1 {
+    font-weight: bold;
+    font-size: 5rem;
+}
+
+header .header-content button {
+    background-color: #7060fe;
+    color: white;
+    border: none;
+}
+
+.icon_border {
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border: 1px solid #7060fe;
+    transform: rotate( 45deg);
+}
+
+@media (min-width:1180px) {
+    .header-content .header_links .heads {
+        margin-left: 142px !important;
+    }
+}
+
+.header-content .header_links .icon {
+    width: 40px;
+    height: 40px;
+    background-color: #7060fe;
+}
+
+.header-content .header_links .icon svg {
+    transform: rotate(-45deg);
+}
+
+header .down {
+    transition: .5s;
+    animation-name: down_up;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    padding-bottom: 20px;
+    cursor: pointer;
+}
+
+@keyframes down_up {
+    0% {
+        transform: translateY(15px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+/***start patches*/
+
+.patches {
+    background-color: #1f2334;
+    color: white;
+}
+
+.patches .patches_content .patches_header {
+    flex-wrap: wrap;
+}
+
+.hide {
+    opacity: .08;
+}
+
+.patches .patches_content ul li {
+    cursor: pointer;
+    color: #6c757d;
+    font-weight: bold;
+}
+
+.patches .patches_content ul li.active {
+    color: white;
+}
+
+.patches_content .patches_header .feat span {
+    font-size: 1.2rem;
+}
+
+.patches_header .feat span:nth-of-type(2) {
+    background-color: #7060fe;
+}
+
+.patches_content .patches_header .feat span:last-of-type {
+    background-color: #343a40;
+    color: #7060fe;
+}
+
+.patches_header p {
+    color: #7060fe;
+}
+
+@media (min-width:991px) {
+    .patches .patches_content ul {
+        margin-left: 5%;
+    }
+}
+
+.patches .game_cards .grid-item {
+    transition: 1s;
+}
+
+.patches .game_cards .game_card {
+    font-weight: 700;
+    background: url("..//wallpap/10.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.patches .game_cards>div {
+    padding-left: 20px;
+}
+
+.patches .game_cards .game_card .row {
+    background: radial-gradient(150px 60px, rgba(0, 0, 0, .5), #1f2334);
+    border: 4px solid #343a40;
+}
+
+.game_card .title span.price {
+    color: #28a745;
+}
+
+.game_card p {
+    margin-bottom: 1.2rem !important;
+}
+
+
+/*posterssssssssssss**/
+
+.posters .content-box img {
+    height: 400px;
+}
+
+.posters .owl-carousel .owl-nav button.owl-next,
+.posters .owl-carousel .owl-nav button.owl-prev {
+    position: absolute;
+    top: 40%;
+    transform: rotate( 45deg);
+    width: 55px;
+    height: 55px;
+    border: 2px solid white;
+    border-radius: 0;
+}
+
+.posters .owl-carousel .owl-nav span {
+    background: white;
+}
+
+.posters .owl-theme .owl-nav [class*=owl-] {
+    width: 40px;
+    height: 40px;
+    border-radius: 0;
+}
+
+.posters .owl-theme .owl-nav [class*=owl-]:hover {
+    background: white;
+}
+
+.posters .owl-carousel .owl-nav button.owl-next {
+    right: 10px;
+}
+
+.posters .owl-carousel .owl-nav button.owl-prev {
+    left: 10px;
+}
+
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+    background-color: #210dda;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+    background-color: white;
+}
+
+.posters .owl-nav span i {
+    transform: rotate(-45deg);
+    color: black;
+    text-align: center;
+    font-weight: 300;
+    margin-right: -7%;
+    margin-top: 4px;
+}
+
+
+/**************************** leagues ********************/
+
+.leagues {
+    background: url('../wallpap/1.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.leagues .leagues_content {
+    background: radial-gradient(500px, rgba(0, 0, 0, .5), #1f2334);
+}
+
+.leagues .leagues_content .head {
+    flex-wrap: wrap;
+}
+
+.leagues .leagues_content .head ul {
+    color: white;
+    font-size: 1.2rem;
+}
+
+.leagues .leagues_content .head ul li:not(:first-of-type) {
+    margin-left: 20px;
+    border-radius: 3px;
+}
+
+.leagues .leagues_content .head ul li {
+    padding: 7px 17px;
+    cursor: pointer;
+}
+
+.leagues .leagues_content .head ul li:nth-of-type(2) {
+    background-color: #7060fe;
+}
+
+.leagues .leagues_content .head ul li:last-of-type {
+    margin-left: 0;
+    background-color: #343a40
+}
+
+.leagues_content .head ul li:last-of-type:hover {
+    background-color: #1f2334;
+}
+
+.leagues_content .head span {
+    color: #7060fe;
+}
+
+.leagues_content .cards .leagues_card {
+    color: white;
+    font-weight: 700;
+    overflow: hidden;
+}
+
+.leagues_content .cards .card_content {
+    background-image: url('../wallpap/11.jpg');
+    background-size: cover;
+    background-position: center;
+    border: 6px solid #343a40;
+}
+
+.leagues_content .cards .card_content .card_layer {
+    background: radial-gradient(150px 80px, rgba(0, 0, 0, .5), #1f2334);
+    margin: -1px;
+}
+
+.leagues_content .cards .imgs {
+    flex-basis: 30%;
+}
+
+.leagues_content .cards .info ul li span {
+    margin-left: 10px;
+}
+
+.leagues_content .cards .card_content .card_layer .card_button button {
+    padding: 8px 15px;
+    border: 1px solid #7060fe;
+    border-radius: 5px;
+}
+
+.cards .card_content .card_layer .card_button button:first-of-type {
+    background-color: transparent;
+    color: white;
+    transition: .5s;
+}
+
+.cards .card_content .card_layer .card_button button:first-of-type:hover {
+    background-color: #7060fe;
+}
+
+.cards .card_content .card_layer .card_button button:last-of-type:hover {
+    background-color: transparent;
+}
+
+
+/**users and videos*/
+
+.all_section_bg {
+    background-color: #1f2334;
+}
+
+.users_videos .users {
+    color: white;
+}
+
+.users .head {
+    flex-wrap: wrap;
+}
+
+.users .head ul {
+    background-color: #343a40;
+    border-radius: 5px;
+}
+
+.users .head ul li,
+.users .head span:first-of-type {
+    padding: 5px 15px;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.users .head ul li:first-of-type {
+    background-color: #7060fe;
+    border-radius: 5px;
+    padding: 5px 25px;
+}
+
+@media (max-width:786px) {
+    .leagues .leagues_content .head ul {
+        color: white;
+        font-size: .7rem;
+    }
+    .users .head ul li,
+    .users .head span:first-of-type {
+        font-size: 12px;
+    }
+}
+
+.users_carousel .content-box {
+    background-image: url('../wallpap/3.jpg');
+    background-size: cover;
+    background-position: 100%;
+}
+
+.users_carousel .content-box .box {
+    background: linear-gradient(#141721, rgba(0, 0, 0, .8), #141721 200px);
+    padding: 15px;
+}
+
+.users_carousel .content-box .box span.dot2 {
+    background-color: #7060fe;
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+
+.users_carousel .content-box .box .image_box {
+    background: transparent;
+    width: 80px;
+    height: 80px;
+    border: 1px solid #7060fe;
+    margin: auto;
+}
+
+.users_carousel .content-box .box .image {
+    overflow: hidden;
+    background-color: #7060fe;
+    border: 1px solid #7060fe;
+    width: 70px;
+    height: 70px;
+    margin: auto;
+}
+
+.users_carousel .content-box .box .image img {
+    margin: auto;
+    width: 50px;
+}
+
+.users_carousel .content-box .box button {
+    background-color: #7060fe;
+    color: white;
+    border-radius: 20px;
+}
+
+.users_carousel .owl-theme .owl-nav [class*=owl-] {
+    background: none;
+}
+
+.users_carousel .owl-theme .owl-nav {
+    position: absolute;
+    margin-top: 30px;
+}
+
+.users_videos .owl-theme .owl-dots {
+    padding: 15px 0;
+}
+
+
+/********** latest videos **********************/
+
+.latest_videos {
+    color: white;
+}
+
+.latest_videos .video1 {
+    background: url('../wallpap/9.jpg');
+    background-position: center;
+    height: 100%;
+}
+
+.latest_videos .video1 .video_layer {
+    background: linear-gradient(transparent, #7060fe 350px);
+    height: 100%;
+    flex-direction: column-reverse;
+}
+
+.latest_videos .video_layer .info p {
+    font-size: 15px;
+}
+
+.video2 .box1 {
+    background: url('../wallpap/8.jpg');
+}
+
+.video2 .box2 {
+    background: url('../wallpap/7.jpg');
+}
+
+.video4 .box1 {
+    background: url('../wallpap/5.jpg');
+}
+
+.video4 .box2 {
+    background: url('../wallpap/4.jpg');
+}
+
+.video2 .box1,
+.video2 .box2,
+.video4 .box1,
+.video4 .box2 {
+    background-position: center;
+    background-size: cover;
+}
+
+.video2 .box1_layer,
+.video2 .box2_layer,
+.video4 .box1_layer,
+.video4 .box2_layer {
+    background: linear-gradient(transparent, rgb(43, 49, 73) 150px);
+}
+
+.latest_videos .videos .info {
+    font-weight: 700;
+    margin-top: 5rem !important;
+}
+
+.latest_videos .video3 {
+    background: url('../wallpap/6.jpg');
+    background-position: center;
+    height: 100%;
+}
+
+.latest_videos .video3 .video_layer {
+    background: linear-gradient(transparent, rgb(43, 49, 73) 350px);
+    height: 100%;
+    flex-direction: column-reverse;
+}
+
+
+/******************************** end of latest video **********************/
+
+.prime {
+    background-image: url('../wallpap/10.jpg');
+    background-position: center center;
+    background-size: cover;
+}
+
+.prime .prime_layer {
+    background: radial-gradient(400px 300px, rgba(112, 96, 254, .5), #7060fe);
+}
+
+.prime_layer .prime_content h1 {
+    font-size: 4em;
+    opacity: .3;
+    -webkit-text-stroke: 1px white;
+    -webkit-text-fill-color: transparent;
+}
+
+.prime_layer .prime_content h3 {
+    font-size: 3em;
+    color: white;
+    font-weight: bold;
+}
+
+@media (min-width:992px) {
+    .prime_layer .prime_content h1 {
+        font-size: 5em;
+    }
+    .prime_layer .prime_content h3 {
+        font-size: 4em;
+    }
+}
+
+.prime_layer .prime_content .box {
+    flex-wrap: wrap;
+}
+
+.prime_layer .prime_content .box span {
+    font-size: 2.5em;
+}
+
+.prime_layer .prime_content button {
+    background-color: black;
+    color: white;
+    font-size: 1.5em;
+}
+
+.first_footer h1 {
+    font-weight: 700;
+}
+
+.first_footer .esport ul li {
+    margin-top: 1em;
+    font-size: 1.2em;
+}
+
+
+/************************footer ****************/
+
+footer {
+    background-color: #07080b;
+    position: relative;
+}
+
+footer .footer_content .icons .icon_border {
+    width: 40px;
+    height: 40px;
+}
+
+footer .footer_content .icons .icon {
+    background: #3e368a;
+    width: 32px;
+    height: 32px;
+}
+
+footer .footer_content .icons .icon svg {
+    transform: rotate(-45deg);
+}
+
+.top {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #7060fe;
+    text-align: center;
+    line-height: 3;
+    right: 2%;
+    z-index: 22;
+    bottom: 17px;
+    opacity: 0;
+    transition: .5s;
+}
+
+@media (max-width:786px) {
+    .first_footer .esport {
+        text-align: center;
+    }
+    .prime_layer .prime_content .box span {
+        font-size: 1.5em;
+    }
+    .prime_layer .prime_content .box {
+        margin-top: 7em !important;
+    }
+    .footer_content .link {
+        text-align: center;
+    }
+    .footer_content .copyright {
+        justify-content: center !important;
+    }
+}

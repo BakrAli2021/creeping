@@ -1,0 +1,944 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="ICON/1.ico">
+    <link rel="stylesheet" type="text/css" href="https://kit-pro.fontawesome.com/releases/v5.13.0/css/pro.min.css">
+    <!--jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!--bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <!--fontawesomeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-->
+    <link rel="stylesheet" type="text/css" href="https://kit-pro.fontawesome.com/releases/v5.13.0/css/pro.min.css">
+    <!--owl carousel CDN-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous"
+        referrerpolicy="no-referrer" />
+    <!--font family-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&display=swap" rel="stylesheet">
+    <!--animated-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!--custom css-->
+    <link rel="stylesheet" href="css/css.css">
+    <title>CREEPING</title>
+</head>
+
+<body class="position-relative">
+    <!--statr header-->
+    <header id="home">
+        <div class="header-content h-100">
+            <div class="lang-player container">
+                <div class="row">
+                    <div class="language">
+                        <select class="rounded font-weigth" id="select-lag">
+                            <option value="" selected>Select language</option>
+                            <option value="">English</option>
+                            <option value="">Arabic</option>
+                       </select>
+                        <div class="global" for="select-lag">
+                            <svg aria-hidden="true" width="20px" focusable="false" data-prefix="fal" data-icon="globe" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" class="svg-inline--fa fa-globe fa-w-16 fa-3x"><path fill="currentColor" d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm193.2 152h-82.5c-9-44.4-24.1-82.2-43.2-109.1 55 18.2 100.2 57.9 125.7 109.1zM336 256c0 22.9-1.6 44.2-4.3 64H164.3c-2.7-19.8-4.3-41.1-4.3-64s1.6-44.2 4.3-64h167.4c2.7 19.8 4.3 41.1 4.3 64zM248 40c26.9 0 61.4 44.1 78.1 120H169.9C186.6 84.1 221.1 40 248 40zm-67.5 10.9c-19 26.8-34.2 64.6-43.2 109.1H54.8c25.5-51.2 70.7-90.9 125.7-109.1zM32 256c0-22.3 3.4-43.8 9.7-64h90.5c-2.6 20.5-4.2 41.8-4.2 64s1.5 43.5 4.2 64H41.7c-6.3-20.2-9.7-41.7-9.7-64zm22.8 96h82.5c9 44.4 24.1 82.2 43.2 109.1-55-18.2-100.2-57.9-125.7-109.1zM248 472c-26.9 0-61.4-44.1-78.1-120h156.2c-16.7 75.9-51.2 120-78.1 120zm67.5-10.9c19-26.8 34.2-64.6 43.2-109.1h82.5c-25.5 51.2-70.7 90.9-125.7 109.1zM363.8 320c2.6-20.5 4.2-41.8 4.2-64s-1.5-43.5-4.2-64h90.5c6.3 20.2 9.7 41.7 9.7 64s-3.4 43.8-9.7 64h-90.5z" class=""></path></svg>
+                        </div>
+                    </div>
+                    <button class="rounded font-weigth">PLAY FOR FREE</button>
+                </div>
+            </div>
+            <!-----------------------------------nav bar----------------------->
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="nav_content container">
+                    <a class="navbar-brand" href="#">
+                        <img src="logos/logo.png" width="40" alt="" srcset="">
+                    </a>
+                    <div class="player_title  d-flex d-lg-none align-items-center">
+                        <a href="">MIKE LIMETTA</a>
+                        <div class="player_img">
+                            <a href="#home">
+                                <img src="user/3.jpg" width="40" alt="" srcset="">
+                            </a>
+                        </div>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <svg width="30" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-inline--fa fa-bars fa-w-14 fa-3x">
+                <path fill="white" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z" class=""></path></svg>
+                </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">STORE <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#patches">PATCHES</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#leag">UPDATES</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">PREVIOUS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#users">HEROES</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#esport">NEWS</a>
+                            </li>
+                        </ul>
+                        <!------------------------nav-icons-------------------------->
+                        <div class="nav_icons d-flex mr-lg-5">
+                            <div class="icon ml-2">
+                                <svg width="25" aria-hidden="true" focusable="false" data-prefix="fal" data-icon="bells" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" class="svg-inline--fa fa-bells fa-w-20 fa-3x">
+                        <path fill="white" d="M638.4 313.9c-2.1-5.9-6.4-11.2-12.9-14.5-21-10.8-58.3-24.9-87.4-105-.8-2.2-14.7-40.5-15.4-42.6C503 97.6 451.8 64 397.4 64c-15.1 0-30.5 2.6-45.6 8.1-3.6 1.3-6.6 3.3-10 4.8-14.2-16-32.1-29-53.5-36.8-15-5.5-30.5-8.1-45.6-8.1-54.5 0-105.6 33.6-125.3 87.8-.8 2.1-14.6 40.4-15.4 42.6-29.2 80.1-66.4 94.3-87.4 105-6.5 3.3-10.8 8.6-12.9 14.5-4.6 12.9 1 28.8 16 34.2l82 29.9c-2.1 7-3.6 14.3-3.6 22 0 44.2 35.8 80 80 80 32.6 0 60.5-19.6 72.9-47.7l42.1 15.3c-2.8 6.5-7.5 14.8-3.4 26 4.9 13.1 19.6 21.3 34.3 15.9l76-27.7c11.8 29.4 40.5 50.1 74.1 50.1 44.2 0 80-35.8 80-80 0-8.7-1.9-16.8-4.6-24.5l75-27.3c14.9-5.4 20.5-21.3 15.9-34.2zM176 416c-26.5 0-48-21.5-48-48 0-3.9.6-7.5 1.5-11.1l88.9 32.4C210.6 405 194.7 416 176 416zm124.7-30.9L40.1 290.3c24.5-12.8 63.2-38.2 91.8-117 8.3-22.9 5.1-14.1 15.4-42.6C161.9 90.8 200.2 64 242.6 64c44.7 0 70.8 29.1 71.6 29.9-43.3 34.8-62.2 94-42.2 149.1.8 2.1 14.8 40.4 15.6 42.6 16.9 46.4 17.4 77.3 13.1 99.5zM472 448c-19.7 0-36.1-12.2-43.4-29.3l89.3-32.5c1.3 4.4 2.1 9 2.1 13.8 0 26.5-21.5 48-48 48zm-149.5-24.8c10.6-25.6 23.8-69.8-4.8-148.7-9.6-26.3-5.5-15-15.6-42.6-19.1-52.5 8.1-110.8 60.6-129.9 53-19.3 110.9 8.5 129.9 60.6 9.7 26.7 5 13.8 15.4 42.6 28.7 78.8 67.3 104.2 91.8 117l-277.3 101z" class=""></path>
+                    </svg>
+                            </div>
+                            <div class="icon ml-2"><svg width="20" aria-hidden="true" focusable="false" data-prefix="fal" data-icon="shopping-cart" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="svg-inline--fa fa-shopping-cart fa-w-18 fa-3x">
+                    <path fill="white" d="M551.991 64H129.28l-8.329-44.423C118.822 8.226 108.911 0 97.362 0H12C5.373 0 0 5.373 0 12v8c0 6.627 5.373 12 12 12h78.72l69.927 372.946C150.305 416.314 144 431.42 144 448c0 35.346 28.654 64 64 64s64-28.654 64-64a63.681 63.681 0 0 0-8.583-32h145.167a63.681 63.681 0 0 0-8.583 32c0 35.346 28.654 64 64 64 35.346 0 64-28.654 64-64 0-17.993-7.435-34.24-19.388-45.868C506.022 391.891 496.76 384 485.328 384H189.28l-12-64h331.381c11.368 0 21.177-7.976 23.496-19.105l43.331-208C578.592 77.991 567.215 64 551.991 64zM240 448c0 17.645-14.355 32-32 32s-32-14.355-32-32 14.355-32 32-32 32 14.355 32 32zm224 32c-17.645 0-32-14.355-32-32s14.355-32 32-32 32 14.355 32 32-14.355 32-32 32zm38.156-192H171.28l-36-192h406.876l-40 192z" class=""></path>
+                </svg>
+                            </div>
+                            <div class="icon ml-2"><svg width="20" aria-hidden="true" focusable="false" data-prefix="fal" data-icon="question-circle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-question-circle fa-w-16 fa-3x">
+                    <path fill="white" d="M256 340c-15.464 0-28 12.536-28 28s12.536 28 28 28 28-12.536 28-28-12.536-28-28-28zm7.67-24h-16c-6.627 0-12-5.373-12-12v-.381c0-70.343 77.44-63.619 77.44-107.408 0-20.016-17.761-40.211-57.44-40.211-29.144 0-44.265 9.649-59.211 28.692-3.908 4.98-11.054 5.995-16.248 2.376l-13.134-9.15c-5.625-3.919-6.86-11.771-2.645-17.177C185.658 133.514 210.842 116 255.67 116c52.32 0 97.44 29.751 97.44 80.211 0 67.414-77.44 63.849-77.44 107.408V304c0 6.627-5.373 12-12 12zM256 40c118.621 0 216 96.075 216 216 0 119.291-96.61 216-216 216-119.244 0-216-96.562-216-216 0-119.203 96.602-216 216-216m0-32C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8z" class=""></path>
+                </svg>
+                            </div>
+                            <div class="icon ml-2"><svg width="20" aria-hidden="true" focusable="false" data-prefix="fal" data-icon="flag-alt" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-flag-alt fa-w-16 fa-3x">
+                    <path fill="white" d="M472.5 0c-7 0-14.3 1.5-21.2 4.6-50.5 22.7-87.8 30.3-119.1 30.3C266.1 34.9 227.7.4 151.4.4 119.8.4 81.2 6.9 32 23.6V16c0-8.8-7.2-16-16-16S0 7.2 0 16v488c0 4.4 3.6 8 8 8h16c4.4 0 8-3.6 8-8V403.6c44.2-15.8 81.6-22 114.5-22 81.2 0 137.8 34.4 219.1 34.4 35.3 0 75.1-6.5 123.7-25 14-5.4 22.8-17.9 22.8-31.2V33.4C512 13 493.4 0 472.5 0zm-107 384c-75.6 0-133-34.4-219.1-34.4-36.7 0-74.4 6.5-114.5 19.8V57.2c46-16.7 85.3-24.8 119.4-24.8 69.5 0 108.4 34.5 180.8 34.5 39.8 0 81.8-10.5 132.1-33.1 9.4-4.2 15.7-.5 15.7 5.6v320.1c-.8 2.5-58.8 24.5-114.4 24.5z" class=""></path>
+                </svg>
+                            </div>
+                            <div class="icon ml-2"><svg width="20" aria-hidden="true" focusable="false" data-prefix="fad" data-icon="search" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-search fa-w-16 fa-3x">
+                    <g class="fa-group">
+                        <path fill="white" d="M208 80a128 128 0 1 1-90.51 37.49A127.15 127.15 0 0 1 208 80m0-80C93.12 0 0 93.12 0 208s93.12 208 208 208 208-93.12 208-208S322.88 0 208 0z" class="fa-secondary"></path>
+                        <path fill="white" d="M504.9 476.7L476.6 505a23.9 23.9 0 0 1-33.9 0L343 405.3a24 24 0 0 1-7-17V372l36-36h16.3a24 24 0 0 1 17 7l99.7 99.7a24.11 24.11 0 0 1-.1 34z" class="fa-primary"></path>
+                    </g>
+                </svg>
+                            </div>
+                        </div>
+                        <!--nav-icons-->
+                    </div>
+                    <div class="player_title d-none d-lg-flex align-items-center">
+                        <a href="">MIKE LIMETTA</a>
+                        <div class="player_img">
+                            <a href="">
+                                <img src="user/3.jpg" width="40" alt="" srcset="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <!--header content-->
+            <div class="header_content">
+                <div class="header_title text-center py-5">
+                    <h4>join the </h4>
+                    <h1>BATTLE OF THE <br> ANCIENTS</h1>
+                    <button class="btn py-3 px-5 rounded font-weight-bold">see what's new</button>
+                </div>
+
+                <div class="header_links container">
+                    <div class="row justify-content-center heads ml-lg-5 mt-5 ml-0 ">
+                        <div class="link_info col-lg-3 col-6 d-flex mb-5">
+                            <div class="mr-3 icon_border d-flex align-items-center justify-content-center">
+                                <div class="icon d-flex justify-content-center align-items-center ">
+                                    <svg aria-hidden="true" width="20" focusable="false" data-prefix="fab" data-icon="facebook-f" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="svg-inline--fa fa-facebook-f fa-w-10 fa-9x"><path fill="white"  d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z" class=""></path></svg>
+                                </div>
+                            </div>
+                            <div class="info">
+                                <p>facebook</p>
+                                <span class="font-weight-bold">creeping</span>
+                            </div>
+                        </div>
+                        <div class="link_info col-lg-3 col-6 d-flex mb-5">
+                            <div class="mr-3 icon_border d-flex align-items-center justify-content-center">
+                                <div class="icon d-flex justify-content-center align-items-center ">
+                                    <svg width="20" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="twitter" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-twitter fa-w-16 fa-9x">
+                                        <path fill="currentColor" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z" class=""></path>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="info">
+                                <p>twitter</p>
+                                <span class="font-weight-bold">creeping</span></div>
+                        </div>
+                        <div class="link_info col-lg-3 col-6 d-flex mb-5">
+                            <div class="mr-3 icon_border d-flex align-items-center justify-content-center">
+                                <div class="icon d-flex justify-content-center align-items-center ">
+                                    <svg width="20" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="twitch" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-twitch fa-w-16 fa-9x">
+                                        <path fill="currentColor" d="M391.17,103.47H352.54v109.7h38.63ZM285,103H246.37V212.75H285ZM120.83,0,24.31,91.42V420.58H140.14V512l96.53-91.42h77.25L487.69,256V0ZM449.07,237.75l-77.22,73.12H294.61l-67.6,64v-64H140.14V36.58H449.07Z" class=""></path>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="info">
+                                <p>TWITCH</p>
+                                <span class="font-weight-bold">creeping</span></div>
+                        </div>
+                        <div class="link_info col-lg-3 col-6 d-flex mb-5">
+                            <div class="mr-3 icon_border d-flex align-items-center justify-content-center">
+                                <div class="icon d-flex justify-content-center align-items-center ">
+                                    <svg width="20" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="discord" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-inline--fa fa-discord fa-w-14 fa-9x">
+                                        <path fill="currentColor" d="M297.216 243.2c0 15.616-11.52 28.416-26.112 28.416-14.336 0-26.112-12.8-26.112-28.416s11.52-28.416 26.112-28.416c14.592 0 26.112 12.8 26.112 28.416zm-119.552-28.416c-14.592 0-26.112 12.8-26.112 28.416s11.776 28.416 26.112 28.416c14.592 0 26.112-12.8 26.112-28.416.256-15.616-11.52-28.416-26.112-28.416zM448 52.736V512c-64.494-56.994-43.868-38.128-118.784-107.776l13.568 47.36H52.48C23.552 451.584 0 428.032 0 398.848V52.736C0 23.552 23.552 0 52.48 0h343.04C424.448 0 448 23.552 448 52.736zm-72.96 242.688c0-82.432-36.864-149.248-36.864-149.248-36.864-27.648-71.936-26.88-71.936-26.88l-3.584 4.096c43.52 13.312 63.744 32.512 63.744 32.512-60.811-33.329-132.244-33.335-191.232-7.424-9.472 4.352-15.104 7.424-15.104 7.424s21.248-20.224 67.328-33.536l-2.56-3.072s-35.072-.768-71.936 26.88c0 0-36.864 66.816-36.864 149.248 0 0 21.504 37.12 78.08 38.912 0 0 9.472-11.52 17.152-21.248-32.512-9.728-44.8-30.208-44.8-30.208 3.766 2.636 9.976 6.053 10.496 6.4 43.21 24.198 104.588 32.126 159.744 8.96 8.96-3.328 18.944-8.192 29.44-15.104 0 0-12.8 20.992-46.336 30.464 7.68 9.728 16.896 20.736 16.896 20.736 56.576-1.792 78.336-38.912 78.336-38.912z" class=""></path>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="info">
+                                <p>DISCORD</p>
+                                <span class="font-weight-bold">creeping</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="down text-center">
+                <svg aria-hidden="true" width="30" focusable="false" data-prefix="fal" data-icon="angle-double-down" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" class="svg-inline--fa fa-angle-double-down fa-w-8 fa-3x"><path fill="currentColor" d="M119.5 262.9L3.5 145.1c-4.7-4.7-4.7-12.3 0-17l7.1-7.1c4.7-4.7 12.3-4.7 17 0L128 223.3l100.4-102.2c4.7-4.7 12.3-4.7 17 0l7.1 7.1c4.7 4.7 4.7 12.3 0 17L136.5 263c-4.7 4.6-12.3 4.6-17-.1zm17 128l116-117.8c4.7-4.7 4.7-12.3 0-17l-7.1-7.1c-4.7-4.7-12.3-4.7-17 0L128 351.3 27.6 249.1c-4.7-4.7-12.3-4.7-17 0l-7.1 7.1c-4.7 4.7-4.7 12.3 0 17l116 117.8c4.7 4.6 12.3 4.6 17-.1z" class=""></path></svg>
+            </div>
+        </div>
+    </header>
+    <!---------------------------- end header start  patches------------------->
+    <div class="patches" id="patches">
+        <div class="patches_content container py-5">
+            <div class="patches_header d-flex justify-content-between">
+                <div class="feat">
+                    <span class="py-2 px-lg-4 px-2 rounded font-weight-bold">TOURNAMENTS</span>
+                    <span class="py-2 px-lg-4 px-2  rounded ">live</span>
+                    <span class="py-2 px-lg-4 px-2 rounded">featred</span>
+                </div>
+                <ul class="list-unstyled d-flex button-group mt-4 mt-md-0">
+                    <li data-filter="*" class="active">All</li>
+                    <li class="ml-4" data-filter="csgo">csgo</li>
+                    <li class="ml-4" data-filter="dot2">dota2</li>
+                    <li class="ml-4" data-filter="call">call of duty</li>
+                    <li class="ml-4" data-filter="fortnite">fortnite</li>
+                </ul>
+                <p class="font-weight-bold ">see more</p>
+            </div>
+            <div class="row game_cards  mt-5" id="cards">
+
+                <div class="col-lg-4 col-md-6 grid-item mt-3 mt-lg-0 d-flex  csgo">
+                    <div class="game_card">
+                        <div class="row">
+                            <div class="col-2  d-flex flex-column justify-content-between">
+                                <img src="logos/LOGO-DOTA.png" width="25" height="25px" alt="" srcset="">
+                                <p class="font-weight-bold">pc</p>
+                            </div>
+                            <div class="title col-10">
+                                <h4 class="font-weight-bold">TUESDAY NIGHT $5 FIGHT</h4>
+                                <p>2V2 64TEAM ANZ</p>
+                                <p>PRIZE POOL :<span> $46.00</span></p>
+                                <div class="d-flex justify-content-between">
+                                    <span>strat in<br>32 mins.<span style="color: #7060fe;">10<br> CREDITS</span>.LPL</span>
+                                    <button class="py-1 px-4 creeping_btn rounded font-weight-bold text-center ">Enter <br> now</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="col-lg-4 col-md-6 grid-item mt-3 mt-lg-0 d-flex dot2">
+                    <div class="game_card">
+                        <div class="row">
+                            <div class="col-2  d-flex flex-column justify-content-between">
+                                <img src="logos/LOGO-DOTA.png" width="25" height="25px" alt="" srcset="">
+                                <p class="font-weight-bold">pc</p>
+                            </div>
+                            <div class="title col-10">
+                                <h4 class="font-weight-bold">TUESDAY NIGHT $5 FIGHT</h4>
+                                <p>2V2 64TEAM ANZ</p>
+                                <p>PRIZE POOL :<span> $46.00</span></p>
+                                <div class="d-flex justify-content-between">
+                                    <span>strat in<br>32 mins.<span style="color: #7060fe;">10<br> CREDITS</span>.LPL</span>
+                                    <button class="py-1 px-4 creeping_btn rounded font-weight-bold text-center ">Enter <br> now</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 grid-item mt-3 mt-lg-0 d-flex csgo">
+                    <div class="game_card">
+                        <div class="row">
+                            <div class="col-2  d-flex flex-column justify-content-between">
+                                <img src="logos/LOGO-DOTA.png" width="25" height="25px" alt="" srcset="">
+                                <p class="font-weight-bold">pc</p>
+                            </div>
+                            <div class="title col-10">
+                                <h4 class="font-weight-bold">TUESDAY NIGHT $5 FIGHT</h4>
+                                <p>2V2 64TEAM ANZ</p>
+                                <p>PRIZE POOL :<span> $46.00</span></p>
+                                <div class="d-flex justify-content-between">
+                                    <span>strat in<br>32 mins.<span style="color: #7060fe;">10<br> CREDITS</span>.LPL</span>
+                                    <button class="py-1 px-4 creeping_btn rounded font-weight-bold text-center ">Enter <br> now</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 grid-item mt-3  d-flex call">
+                    <div class="game_card">
+                        <div class="row">
+                            <div class="col-2  d-flex flex-column justify-content-between">
+                                <img src="logos/LOGO-DOTA.png" width="25" height="25px" alt="" srcset="">
+                                <p class="font-weight-bold">pc</p>
+                            </div>
+                            <div class="title col-10">
+                                <h4 class="font-weight-bold">TUESDAY NIGHT $5 FIGHT</h4>
+                                <p>2V2 64TEAM ANZ</p>
+                                <p>PRIZE POOL :<span> $46.00</span></p>
+                                <div class="d-flex justify-content-between">
+                                    <span>strat in<br>32 mins.<span style="color: #7060fe;">10<br> CREDITS</span>.LPL</span>
+                                    <button class="py-1 px-4 creeping_btn rounded font-weight-bold text-center ">Enter <br> now</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="col-lg-4 col-md-6 grid-item mt-3  d-flex fortnite">
+                    <div class="game_card">
+                        <div class="row">
+                            <div class="col-2  d-flex flex-column justify-content-between">
+                                <img src="logos/LOGO-DOTA.png" width="25" height="25px" alt="" srcset="">
+                                <p class="font-weight-bold">pc</p>
+                            </div>
+                            <div class="title col-10">
+                                <h4 class="font-weight-bold">TUESDAY NIGHT $5 FIGHT</h4>
+                                <p>2V2 64TEAM ANZ</p>
+                                <p>PRIZE POOL :<span> $46.00</span></p>
+                                <div class="d-flex justify-content-between">
+                                    <span>strat in<br>32 mins.<span style="color: #7060fe;">10<br> CREDITS</span>.LPL</span>
+                                    <button class="py-1 px-4 creeping_btn rounded font-weight-bold text-center ">Enter <br> now</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 grid-item mt-3  d-flex fortnite">
+                    <div class="game_card">
+                        <div class="row">
+                            <div class="col-2  d-flex flex-column justify-content-between">
+                                <img src="logos/LOGO-DOTA.png" width="25" height="25px" alt="" srcset="">
+                                <p class="font-weight-bold">pc</p>
+                            </div>
+                            <div class="title col-10">
+                                <h4 class="font-weight-bold">TUESDAY NIGHT $5 FIGHT</h4>
+                                <p>2V2 64TEAM ANZ</p>
+                                <p>PRIZE POOL :<span> $46.00</span></p>
+                                <div class="d-flex justify-content-between">
+                                    <span>strat in<br>32 mins.<span style="color: #7060fe;">10<br> CREDITS</span>.LPL</span>
+                                    <button class="py-1 px-4 creeping_btn rounded font-weight-bold text-center ">Enter <br> now</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!--start owl carsoul for poster-->
+            <div class="posters mt-5 ">
+                <div class="title d-flex justify-content-between mb-5">
+                    <h3 class="font-weight-bold">games</h3>
+                    <span class="font-weight-bold" style="color: #7060fe;">see more</span>
+                </div>
+                <div class="owl-carousel owl-theme position-relative">
+                    <div class="content-box ">
+                        <img src="posters/1.jpg" class="img-fluid" alt="">
+                    </div>
+
+                    <div class="content-box ">
+                        <img src="posters/2.jpg" class="img-fluid" alt="">
+                    </div>
+                    <div class="content-box ">
+                        <img src="posters/3.jpg" class="img-fluid" alt="">
+                    </div>
+                    <div class="content-box ">
+                        <img src="posters/4.jpg" class="img-fluid" alt="">
+                    </div>
+                    <div class="content-box ">
+                        <img src="posters/5.jpg" class="img-fluid" alt="">
+                    </div>
+                </div>
+                <div class="owl-nav">
+                    <span class="owl-nav-prev"><i class=" fas fa-angle-double-left fa-2x"></i></span>
+                    <span class="owl-nav-next"> <i class=" fas fa-angle-double-right fa-2x"></i></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------------------------end of header------------->
+    <section class="leagues" id="leag">
+        <div class="leagues_content">
+            <div class="container py-5">
+                <div class="head d-flex justify-content-between">
+                    <ul class="d-flex list-unstyled justify-content-between">
+                        <li class="font-weight-bold pl-0">EVENTS AND LEAGUES</li>
+                        <li class="creeping_btn">live</li>
+                        <li>onging</li>
+                    </ul>
+                    <span class="font-weight-bold mr-2">see more</span>
+                </div>
+                <!--end of head-->
+                <div class="row cards mt-5">
+                    <div class="col-md-6 col-lg-4 leagues_card ">
+                        <div class="card_content ">
+                            <div class="card_layer  p-3">
+                                <div class="imgs_info d-flex ">
+                                    <div class="imgs d-flex justify-content-around flex-column">
+                                        <img src="logos/logo-ASSASSINS.png" class="img-fluid w-50" alt="" srcset="">
+                                        <img src="logos/SPARK.png" alt="" class="img-fluid w-50" srcset="">
+                                    </div>
+                                    <div class="info">
+                                        <h2 class="mb-0">HSL TAIWAN</h2>
+                                        <p>DOTA2 - CSGO</p>
+                                        <ul class="list-unstyled mt-3">
+                                            <li><svg width="12" aria-hidden="true" focusable="false" data-prefix="far" data-icon="calendar-day" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-inline--fa fa-calendar-day fa-w-14 fa-3x">
+                                    <path fill="white" d="M112 368h96c8.8 0 16-7.2 16-16v-96c0-8.8-7.2-16-16-16h-96c-8.8 0-16 7.2-16 16v96c0 8.8 7.2 16 16 16zM400 64h-48V16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v48H160V16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v48H48C21.5 64 0 85.5 0 112v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48zm0 394c0 3.3-2.7 6-6 6H54c-3.3 0-6-2.7-6-6V160h352v298z" class=""></path>
+                                </svg> <span>SEP 21 - NOV 21</span></li>
+
+                                            <li> <svg width="12" aria-hidden="true" focusable="false" data-prefix="far" data-icon="clock" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-clock fa-w-16 fa-3x">
+                                    <path fill="white" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 448c-110.5 0-200-89.5-200-200S145.5 56 256 56s200 89.5 200 200-89.5 200-200 200zm61.8-104.4l-84.9-61.7c-3.1-2.3-4.9-5.9-4.9-9.7V116c0-6.6 5.4-12 12-12h32c6.6 0 12 5.4 12 12v141.7l66.8 48.6c5.4 3.9 6.5 11.4 2.6 16.8L334.6 349c-3.9 5.3-11.4 6.5-16.8 2.6z" class=""></path>
+                                </svg><span>TUS SEP 4, AT 4:00 PM</span></li>
+
+                                            <li> <svg width="12" aria-hidden="true" focusable="false" data-prefix="far" data-icon="map-marker-alt" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="svg-inline--fa fa-map-marker-alt fa-w-12 fa-3x">
+                                    <path fill="white" d="M192 0C85.903 0 0 86.014 0 192c0 71.117 23.991 93.341 151.271 297.424 18.785 30.119 62.694 30.083 81.457 0C360.075 285.234 384 263.103 384 192 384 85.903 297.986 0 192 0zm0 464C64.576 259.686 48 246.788 48 192c0-79.529 64.471-144 144-144s144 64.471 144 144c0 54.553-15.166 65.425-144 272zm-80-272c0-44.183 35.817-80 80-80s80 35.817 80 80-35.817 80-80 80-80-35.817-80-80z" class=""></path>
+                                </svg><span> ANZ, TAIWAN</span></li>
+
+                                            <li><svg width="10" aria-hidden="true" focusable="false" data-prefix="far" data-icon="dollar-sign" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 288 512" class="svg-inline--fa fa-dollar-sign fa-w-9 fa-3x">
+                                    <path fill="white" d="M211.9 242.1L95.6 208.9c-15.8-4.5-28.6-17.2-31.1-33.5C60.6 150 80.3 128 105 128h73.8c15.9 0 31.5 5 44.4 14.1 6.4 4.5 15 3.8 20.5-1.7l22.9-22.9c6.8-6.8 6.1-18.2-1.5-24.1C240.4 74.3 210.4 64 178.8 64H176V16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v48h-2.5C60.3 64 14.9 95.8 3.1 143.6c-13.9 56.2 20.2 111.2 73 126.3l116.3 33.2c15.8 4.5 28.6 17.2 31.1 33.5C227.4 362 207.7 384 183 384h-73.8c-15.9 0-31.5-5-44.4-14.1-6.4-4.5-15-3.8-20.5 1.7l-22.9 22.9c-6.8 6.8-6.1 18.2 1.5 24.1 24.6 19.1 54.6 29.4 86.3 29.4h2.8v48c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16v-48h2.5c49.2 0 94.6-31.8 106.4-79.6 13.9-56.2-20.2-111.2-73-126.3z" class=""></path>
+                                </svg> <span>FREE</span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!--buttons-->
+                                <div class="card_button text-center">
+                                    <button>view info</button>
+                                    <button class="creeping_btn">register</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 leagues_card ">
+                        <div class="card_content my-4 my-md-0 ">
+                            <div class="card_layer p-3 ">
+                                <div class="imgs_info d-flex ">
+                                    <div class="imgs d-flex justify-content-around flex-column">
+                                        <img src="logos/logo-ASSASSINS.png" class="img-fluid w-50" alt="" srcset="">
+                                        <img src="logos/SPARK.png" alt="" class="img-fluid w-50" srcset="">
+                                    </div>
+                                    <div class="info">
+                                        <h2 class="mb-0">HSL TAIWAN</h2>
+                                        <p>DOTA2 - CSGO</p>
+                                        <ul class="list-unstyled mt-3">
+                                            <li><svg width="12" aria-hidden="true" focusable="false" data-prefix="far" data-icon="calendar-day" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-inline--fa fa-calendar-day fa-w-14 fa-3x">
+                                    <path fill="white" d="M112 368h96c8.8 0 16-7.2 16-16v-96c0-8.8-7.2-16-16-16h-96c-8.8 0-16 7.2-16 16v96c0 8.8 7.2 16 16 16zM400 64h-48V16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v48H160V16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v48H48C21.5 64 0 85.5 0 112v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48zm0 394c0 3.3-2.7 6-6 6H54c-3.3 0-6-2.7-6-6V160h352v298z" class=""></path>
+                                </svg> <span>SEP 21 - NOV 21</span></li>
+
+                                            <li> <svg width="12" aria-hidden="true" focusable="false" data-prefix="far" data-icon="clock" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-clock fa-w-16 fa-3x">
+                                    <path fill="white" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 448c-110.5 0-200-89.5-200-200S145.5 56 256 56s200 89.5 200 200-89.5 200-200 200zm61.8-104.4l-84.9-61.7c-3.1-2.3-4.9-5.9-4.9-9.7V116c0-6.6 5.4-12 12-12h32c6.6 0 12 5.4 12 12v141.7l66.8 48.6c5.4 3.9 6.5 11.4 2.6 16.8L334.6 349c-3.9 5.3-11.4 6.5-16.8 2.6z" class=""></path>
+                                </svg><span>TUS SEP 4, AT 4:00 PM</span></li>
+
+                                            <li> <svg width="12" aria-hidden="true" focusable="false" data-prefix="far" data-icon="map-marker-alt" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="svg-inline--fa fa-map-marker-alt fa-w-12 fa-3x">
+                                    <path fill="white" d="M192 0C85.903 0 0 86.014 0 192c0 71.117 23.991 93.341 151.271 297.424 18.785 30.119 62.694 30.083 81.457 0C360.075 285.234 384 263.103 384 192 384 85.903 297.986 0 192 0zm0 464C64.576 259.686 48 246.788 48 192c0-79.529 64.471-144 144-144s144 64.471 144 144c0 54.553-15.166 65.425-144 272zm-80-272c0-44.183 35.817-80 80-80s80 35.817 80 80-35.817 80-80 80-80-35.817-80-80z" class=""></path>
+                                </svg><span> ANZ, TAIWAN</span></li>
+
+                                            <li><svg width="10" aria-hidden="true" focusable="false" data-prefix="far" data-icon="dollar-sign" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 288 512" class="svg-inline--fa fa-dollar-sign fa-w-9 fa-3x">
+                                    <path fill="white" d="M211.9 242.1L95.6 208.9c-15.8-4.5-28.6-17.2-31.1-33.5C60.6 150 80.3 128 105 128h73.8c15.9 0 31.5 5 44.4 14.1 6.4 4.5 15 3.8 20.5-1.7l22.9-22.9c6.8-6.8 6.1-18.2-1.5-24.1C240.4 74.3 210.4 64 178.8 64H176V16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v48h-2.5C60.3 64 14.9 95.8 3.1 143.6c-13.9 56.2 20.2 111.2 73 126.3l116.3 33.2c15.8 4.5 28.6 17.2 31.1 33.5C227.4 362 207.7 384 183 384h-73.8c-15.9 0-31.5-5-44.4-14.1-6.4-4.5-15-3.8-20.5 1.7l-22.9 22.9c-6.8 6.8-6.1 18.2 1.5 24.1 24.6 19.1 54.6 29.4 86.3 29.4h2.8v48c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16v-48h2.5c49.2 0 94.6-31.8 106.4-79.6 13.9-56.2-20.2-111.2-73-126.3z" class=""></path>
+                                </svg> <span>FREE</span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!--buttons-->
+                                <div class="card_button text-center">
+                                    <button>view info</button>
+                                    <button class="creeping_btn">register</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-6 col-lg-4 leagues_card ">
+                        <div class="card_content ">
+                            <div class="card_layer p-3 ">
+                                <div class="imgs_info d-flex ">
+                                    <div class="imgs d-flex justify-content-around flex-column">
+                                        <img src="logos/logo-ASSASSINS.png" class="img-fluid w-50" alt="" srcset="">
+                                        <img src="logos/SPARK.png" alt="" class="img-fluid w-50" srcset="">
+                                    </div>
+                                    <div class="info">
+                                        <h2 class="mb-0">HSL TAIWAN</h2>
+                                        <p>DOTA2 - CSGO</p>
+                                        <ul class="list-unstyled mt-3">
+                                            <li><svg width="12" aria-hidden="true" focusable="false" data-prefix="far" data-icon="calendar-day" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-inline--fa fa-calendar-day fa-w-14 fa-3x">
+                                    <path fill="white" d="M112 368h96c8.8 0 16-7.2 16-16v-96c0-8.8-7.2-16-16-16h-96c-8.8 0-16 7.2-16 16v96c0 8.8 7.2 16 16 16zM400 64h-48V16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v48H160V16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v48H48C21.5 64 0 85.5 0 112v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48zm0 394c0 3.3-2.7 6-6 6H54c-3.3 0-6-2.7-6-6V160h352v298z" class=""></path>
+                                </svg> <span>SEP 21 - NOV 21</span></li>
+
+                                            <li> <svg width="12" aria-hidden="true" focusable="false" data-prefix="far" data-icon="clock" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-clock fa-w-16 fa-3x">
+                                    <path fill="white" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 448c-110.5 0-200-89.5-200-200S145.5 56 256 56s200 89.5 200 200-89.5 200-200 200zm61.8-104.4l-84.9-61.7c-3.1-2.3-4.9-5.9-4.9-9.7V116c0-6.6 5.4-12 12-12h32c6.6 0 12 5.4 12 12v141.7l66.8 48.6c5.4 3.9 6.5 11.4 2.6 16.8L334.6 349c-3.9 5.3-11.4 6.5-16.8 2.6z" class=""></path>
+                                </svg><span>TUS SEP 4, AT 4:00 PM</span></li>
+
+                                            <li> <svg width="12" aria-hidden="true" focusable="false" data-prefix="far" data-icon="map-marker-alt" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="svg-inline--fa fa-map-marker-alt fa-w-12 fa-3x">
+                                    <path fill="white" d="M192 0C85.903 0 0 86.014 0 192c0 71.117 23.991 93.341 151.271 297.424 18.785 30.119 62.694 30.083 81.457 0C360.075 285.234 384 263.103 384 192 384 85.903 297.986 0 192 0zm0 464C64.576 259.686 48 246.788 48 192c0-79.529 64.471-144 144-144s144 64.471 144 144c0 54.553-15.166 65.425-144 272zm-80-272c0-44.183 35.817-80 80-80s80 35.817 80 80-35.817 80-80 80-80-35.817-80-80z" class=""></path>
+                                </svg><span> ANZ, TAIWAN</span></li>
+
+                                            <li><svg width="10" aria-hidden="true" focusable="false" data-prefix="far" data-icon="dollar-sign" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 288 512" class="svg-inline--fa fa-dollar-sign fa-w-9 fa-3x">
+                                    <path fill="white" d="M211.9 242.1L95.6 208.9c-15.8-4.5-28.6-17.2-31.1-33.5C60.6 150 80.3 128 105 128h73.8c15.9 0 31.5 5 44.4 14.1 6.4 4.5 15 3.8 20.5-1.7l22.9-22.9c6.8-6.8 6.1-18.2-1.5-24.1C240.4 74.3 210.4 64 178.8 64H176V16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v48h-2.5C60.3 64 14.9 95.8 3.1 143.6c-13.9 56.2 20.2 111.2 73 126.3l116.3 33.2c15.8 4.5 28.6 17.2 31.1 33.5C227.4 362 207.7 384 183 384h-73.8c-15.9 0-31.5-5-44.4-14.1-6.4-4.5-15-3.8-20.5 1.7l-22.9 22.9c-6.8 6.8-6.1 18.2 1.5 24.1 24.6 19.1 54.6 29.4 86.3 29.4h2.8v48c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16v-48h2.5c49.2 0 94.6-31.8 106.4-79.6 13.9-56.2-20.2-111.2-73-126.3z" class=""></path>
+                                </svg> <span>FREE</span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!--buttons-->
+                                <div class="card_button text-center">
+                                    <button>view info</button>
+                                    <button class="creeping_btn">register</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!--end of patches start of user section-->
+    <section class="all_section_bg">
+        <div class="users_videos" id="users">
+            <section class="users py-5 container">
+                <div class="head d-flex justify-content-between">
+                    <div class="d-flex">
+                        <span>watch</span>
+                        <ul class="d-flex list-unstyled">
+                            <li>live</li>
+                            <li>featred</li>
+                            <li>chanel</li>
+                        </ul>
+                    </div>
+                    <span class="font-weight-bold mr-2" style="color: #7060fe;">see more</span>
+                </div>
+                <div class="users_carousel mt-5">
+                    <div class="owl-carousel owl-theme position-relative">
+                        <div class="content-box  ">
+                            <div class="box">
+                                <span class="dot2">dota 2</span>
+                                <div class="text-center py-3 px-1">
+                                    <div class="image_box d-flex rounded-circle my-4 ">
+                                        <div class="image p-2 rounded-circle">
+                                            <img src="user/player-04.png" width="70" alt="" srcset="">
+                                        </div>
+                                    </div>
+                                    <h2>Ahmed Shico</h2>
+                                    <div class="text d-flex justify-content-around">
+                                        <div><span>350k</span> viewers</div>
+                                        <div><span>35</span> videos</div>
+                                    </div>
+                                    <button class="btn py-2 px-5 my-4"><svg width="20" aria-hidden="true" focusable="false" data-prefix="fal" data-icon="users-crown" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" class="svg-inline--fa fa-users-crown fa-w-20 fa-3x mr-2">
+                                        <path fill="white" d="M564 288h-40c-15.18 0-29.27 4.83-41.15 12.93 9.38 6.37 17.93 13.87 25.45 22.37 4.89-2.05 10.15-3.3 15.7-3.3h40c24.25 0 44 21.53 44 48 0 8.84 7.16 16 16 16s16-7.16 16-16c0-44.11-34.09-80-76-80zm-20-32c44.18 0 80-35.82 80-80s-35.82-80-80-80-80 35.82-80 80 35.82 80 80 80zm0-128c26.47 0 48 21.53 48 48s-21.53 48-48 48-48-21.53-48-48 21.53-48 48-48zM400.15 308.02c-11.88 0-23.87 1.73-35.49 5.26-14.16 4.3-29.1 6.72-44.66 6.72s-30.5-2.42-44.66-6.71a122.209 122.209 0 0 0-35.49-5.26c-36.29 0-71.58 16.18-92.28 46.93C135.21 373.3 128 395.41 128 419.2V432c0 26.51 21.49 48 48 48h288c26.51 0 48-21.49 48-48v-12.8c0-23.79-7.21-45.9-19.57-64.25-20.7-30.75-56-46.93-92.28-46.93zM480 432c0 8.82-7.18 16-16 16H176c-8.82 0-16-7.18-16-16v-12.8c0-16.63 4.88-32.67 14.11-46.38 13.83-20.54 38.4-32.8 65.74-32.8 8.9 0 17.71 1.31 26.19 3.88 17.69 5.37 35.84 8.1 53.96 8.1s36.27-2.72 53.96-8.1a89.887 89.887 0 0 1 26.19-3.88c27.34 0 51.91 12.26 65.74 32.8 9.23 13.71 14.11 29.75 14.11 46.38V432zM96 256c44.18 0 80-35.82 80-80s-35.82-80-80-80-80 35.82-80 80 35.82 80 80 80zm0-128c26.47 0 48 21.53 48 48s-21.53 48-48 48-48-21.53-48-48 21.53-48 48-48zm61.15 172.93C145.27 292.83 131.18 288 116 288H76c-41.91 0-76 35.89-76 80 0 8.84 7.16 16 16 16s16-7.16 16-16c0-26.47 19.75-48 44-48h40c5.55 0 10.81 1.25 15.7 3.3 7.52-8.5 16.07-16 25.45-22.37zM320 288c61.86 0 112-50.14 112-112V32l-56 28-56-28-56 28-56-28v144c0 61.86 50.14 112 112 112zM240 83.78l24 12 56-28 56 28 24-12V128H240V83.78zm0 76.22h160v16c0 44.11-35.89 80-80 80s-80-35.89-80-80v-16z" class=""></path>
+                                    </svg>
+                                <span>follow now</span>
+                                </button>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                        <div class="content-box  ">
+                            <div class="box">
+                                <span class="dot2">dota 2</span>
+                                <div class="text-center py-3 px-1">
+                                    <div class="image_box d-flex rounded-circle my-4 ">
+                                        <div class="image p-2 rounded-circle">
+                                            <img src="user/player-03.png" width="70" alt="" srcset="">
+                                        </div>
+                                    </div>
+                                    <h2> basma medhat</h2>
+                                    <div class="text d-flex justify-content-around">
+                                        <div><span>940k</span> viewers</div>
+                                        <div><span>45</span> videos</div>
+                                    </div>
+                                    <button class="btn py-2 px-5 my-4"><svg width="20" aria-hidden="true" focusable="false" data-prefix="fal" data-icon="users-crown" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" class="svg-inline--fa fa-users-crown fa-w-20 fa-3x mr-2">
+                                        <path fill="white" d="M564 288h-40c-15.18 0-29.27 4.83-41.15 12.93 9.38 6.37 17.93 13.87 25.45 22.37 4.89-2.05 10.15-3.3 15.7-3.3h40c24.25 0 44 21.53 44 48 0 8.84 7.16 16 16 16s16-7.16 16-16c0-44.11-34.09-80-76-80zm-20-32c44.18 0 80-35.82 80-80s-35.82-80-80-80-80 35.82-80 80 35.82 80 80 80zm0-128c26.47 0 48 21.53 48 48s-21.53 48-48 48-48-21.53-48-48 21.53-48 48-48zM400.15 308.02c-11.88 0-23.87 1.73-35.49 5.26-14.16 4.3-29.1 6.72-44.66 6.72s-30.5-2.42-44.66-6.71a122.209 122.209 0 0 0-35.49-5.26c-36.29 0-71.58 16.18-92.28 46.93C135.21 373.3 128 395.41 128 419.2V432c0 26.51 21.49 48 48 48h288c26.51 0 48-21.49 48-48v-12.8c0-23.79-7.21-45.9-19.57-64.25-20.7-30.75-56-46.93-92.28-46.93zM480 432c0 8.82-7.18 16-16 16H176c-8.82 0-16-7.18-16-16v-12.8c0-16.63 4.88-32.67 14.11-46.38 13.83-20.54 38.4-32.8 65.74-32.8 8.9 0 17.71 1.31 26.19 3.88 17.69 5.37 35.84 8.1 53.96 8.1s36.27-2.72 53.96-8.1a89.887 89.887 0 0 1 26.19-3.88c27.34 0 51.91 12.26 65.74 32.8 9.23 13.71 14.11 29.75 14.11 46.38V432zM96 256c44.18 0 80-35.82 80-80s-35.82-80-80-80-80 35.82-80 80 35.82 80 80 80zm0-128c26.47 0 48 21.53 48 48s-21.53 48-48 48-48-21.53-48-48 21.53-48 48-48zm61.15 172.93C145.27 292.83 131.18 288 116 288H76c-41.91 0-76 35.89-76 80 0 8.84 7.16 16 16 16s16-7.16 16-16c0-26.47 19.75-48 44-48h40c5.55 0 10.81 1.25 15.7 3.3 7.52-8.5 16.07-16 25.45-22.37zM320 288c61.86 0 112-50.14 112-112V32l-56 28-56-28-56 28-56-28v144c0 61.86 50.14 112 112 112zM240 83.78l24 12 56-28 56 28 24-12V128H240V83.78zm0 76.22h160v16c0 44.11-35.89 80-80 80s-80-35.89-80-80v-16z" class=""></path>
+                                    </svg>
+                                <span>follow now</span>
+                                </button>
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <div class="content-box  ">
+                            <div class="box">
+                                <span class="dot2">dota 2</span>
+                                <div class="text-center py-3 px-1">
+                                    <div class="image_box d-flex rounded-circle my-4 ">
+                                        <div class="image p-2 rounded-circle">
+                                            <img src="user/player-01.png" width="70" alt="" srcset="">
+                                        </div>
+                                    </div>
+                                    <h2>bakr ali</h2>
+                                    <div class="text d-flex justify-content-around">
+                                        <div><span>632k</span> viewers</div>
+                                        <div><span>41</span> videos</div>
+                                    </div>
+                                    <button class="btn py-2 px-5 my-4"><svg width="20" aria-hidden="true" focusable="false" data-prefix="fal" data-icon="users-crown" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" class="svg-inline--fa fa-users-crown fa-w-20 fa-3x mr-2">
+                                        <path fill="white" d="M564 288h-40c-15.18 0-29.27 4.83-41.15 12.93 9.38 6.37 17.93 13.87 25.45 22.37 4.89-2.05 10.15-3.3 15.7-3.3h40c24.25 0 44 21.53 44 48 0 8.84 7.16 16 16 16s16-7.16 16-16c0-44.11-34.09-80-76-80zm-20-32c44.18 0 80-35.82 80-80s-35.82-80-80-80-80 35.82-80 80 35.82 80 80 80zm0-128c26.47 0 48 21.53 48 48s-21.53 48-48 48-48-21.53-48-48 21.53-48 48-48zM400.15 308.02c-11.88 0-23.87 1.73-35.49 5.26-14.16 4.3-29.1 6.72-44.66 6.72s-30.5-2.42-44.66-6.71a122.209 122.209 0 0 0-35.49-5.26c-36.29 0-71.58 16.18-92.28 46.93C135.21 373.3 128 395.41 128 419.2V432c0 26.51 21.49 48 48 48h288c26.51 0 48-21.49 48-48v-12.8c0-23.79-7.21-45.9-19.57-64.25-20.7-30.75-56-46.93-92.28-46.93zM480 432c0 8.82-7.18 16-16 16H176c-8.82 0-16-7.18-16-16v-12.8c0-16.63 4.88-32.67 14.11-46.38 13.83-20.54 38.4-32.8 65.74-32.8 8.9 0 17.71 1.31 26.19 3.88 17.69 5.37 35.84 8.1 53.96 8.1s36.27-2.72 53.96-8.1a89.887 89.887 0 0 1 26.19-3.88c27.34 0 51.91 12.26 65.74 32.8 9.23 13.71 14.11 29.75 14.11 46.38V432zM96 256c44.18 0 80-35.82 80-80s-35.82-80-80-80-80 35.82-80 80 35.82 80 80 80zm0-128c26.47 0 48 21.53 48 48s-21.53 48-48 48-48-21.53-48-48 21.53-48 48-48zm61.15 172.93C145.27 292.83 131.18 288 116 288H76c-41.91 0-76 35.89-76 80 0 8.84 7.16 16 16 16s16-7.16 16-16c0-26.47 19.75-48 44-48h40c5.55 0 10.81 1.25 15.7 3.3 7.52-8.5 16.07-16 25.45-22.37zM320 288c61.86 0 112-50.14 112-112V32l-56 28-56-28-56 28-56-28v144c0 61.86 50.14 112 112 112zM240 83.78l24 12 56-28 56 28 24-12V128H240V83.78zm0 76.22h160v16c0 44.11-35.89 80-80 80s-80-35.89-80-80v-16z" class=""></path>
+                                    </svg>
+                                <span>follow now</span>
+                                </button>
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <div class="content-box  ">
+                            <div class="box">
+                                <span class="dot2">dota 2</span>
+                                <div class="text-center py-3 px-1">
+                                    <div class="image_box d-flex rounded-circle my-4 ">
+                                        <div class="image p-2 rounded-circle">
+                                            <img src="user/player-02.png" width="70" alt="" srcset="">
+                                        </div>
+                                    </div>
+                                    <h2>sara mohamed</h2>
+                                    <div class="text d-flex justify-content-around">
+                                        <div><span>856k</span> viewers</div>
+                                        <div><span>73</span> videos</div>
+                                    </div>
+                                    <button class="btn py-2 px-5 my-4"><svg width="20" aria-hidden="true" focusable="false" data-prefix="fal" data-icon="users-crown" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" class="svg-inline--fa fa-users-crown fa-w-20 fa-3x mr-2">
+                                        <path fill="white" d="M564 288h-40c-15.18 0-29.27 4.83-41.15 12.93 9.38 6.37 17.93 13.87 25.45 22.37 4.89-2.05 10.15-3.3 15.7-3.3h40c24.25 0 44 21.53 44 48 0 8.84 7.16 16 16 16s16-7.16 16-16c0-44.11-34.09-80-76-80zm-20-32c44.18 0 80-35.82 80-80s-35.82-80-80-80-80 35.82-80 80 35.82 80 80 80zm0-128c26.47 0 48 21.53 48 48s-21.53 48-48 48-48-21.53-48-48 21.53-48 48-48zM400.15 308.02c-11.88 0-23.87 1.73-35.49 5.26-14.16 4.3-29.1 6.72-44.66 6.72s-30.5-2.42-44.66-6.71a122.209 122.209 0 0 0-35.49-5.26c-36.29 0-71.58 16.18-92.28 46.93C135.21 373.3 128 395.41 128 419.2V432c0 26.51 21.49 48 48 48h288c26.51 0 48-21.49 48-48v-12.8c0-23.79-7.21-45.9-19.57-64.25-20.7-30.75-56-46.93-92.28-46.93zM480 432c0 8.82-7.18 16-16 16H176c-8.82 0-16-7.18-16-16v-12.8c0-16.63 4.88-32.67 14.11-46.38 13.83-20.54 38.4-32.8 65.74-32.8 8.9 0 17.71 1.31 26.19 3.88 17.69 5.37 35.84 8.1 53.96 8.1s36.27-2.72 53.96-8.1a89.887 89.887 0 0 1 26.19-3.88c27.34 0 51.91 12.26 65.74 32.8 9.23 13.71 14.11 29.75 14.11 46.38V432zM96 256c44.18 0 80-35.82 80-80s-35.82-80-80-80-80 35.82-80 80 35.82 80 80 80zm0-128c26.47 0 48 21.53 48 48s-21.53 48-48 48-48-21.53-48-48 21.53-48 48-48zm61.15 172.93C145.27 292.83 131.18 288 116 288H76c-41.91 0-76 35.89-76 80 0 8.84 7.16 16 16 16s16-7.16 16-16c0-26.47 19.75-48 44-48h40c5.55 0 10.81 1.25 15.7 3.3 7.52-8.5 16.07-16 25.45-22.37zM320 288c61.86 0 112-50.14 112-112V32l-56 28-56-28-56 28-56-28v144c0 61.86 50.14 112 112 112zM240 83.78l24 12 56-28 56 28 24-12V128H240V83.78zm0 76.22h160v16c0 44.11-35.89 80-80 80s-80-35.89-80-80v-16z" class=""></path>
+                                    </svg>
+                                <span>follow now</span>
+                                </button>
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <div class="content-box  ">
+                            <div class="box">
+                                <span class="dot2">dota 2</span>
+                                <div class="text-center py-3 px-1">
+                                    <div class="image_box d-flex rounded-circle my-4 ">
+                                        <div class="image p-2 rounded-circle">
+                                            <img src="user/player-05.png" width="70" alt="" srcset="">
+                                        </div>
+                                    </div>
+                                    <h2>cristina john</h2>
+                                    <div class="text d-flex justify-content-around">
+                                        <div><span>570k</span> viewers</div>
+                                        <div><span>88</span> videos</div>
+                                    </div>
+                                    <button class="btn py-2 px-5 my-4"><svg width="20" aria-hidden="true" focusable="false" data-prefix="fal" data-icon="users-crown" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" class="svg-inline--fa fa-users-crown fa-w-20 fa-3x mr-2">
+                                        <path fill="white" d="M564 288h-40c-15.18 0-29.27 4.83-41.15 12.93 9.38 6.37 17.93 13.87 25.45 22.37 4.89-2.05 10.15-3.3 15.7-3.3h40c24.25 0 44 21.53 44 48 0 8.84 7.16 16 16 16s16-7.16 16-16c0-44.11-34.09-80-76-80zm-20-32c44.18 0 80-35.82 80-80s-35.82-80-80-80-80 35.82-80 80 35.82 80 80 80zm0-128c26.47 0 48 21.53 48 48s-21.53 48-48 48-48-21.53-48-48 21.53-48 48-48zM400.15 308.02c-11.88 0-23.87 1.73-35.49 5.26-14.16 4.3-29.1 6.72-44.66 6.72s-30.5-2.42-44.66-6.71a122.209 122.209 0 0 0-35.49-5.26c-36.29 0-71.58 16.18-92.28 46.93C135.21 373.3 128 395.41 128 419.2V432c0 26.51 21.49 48 48 48h288c26.51 0 48-21.49 48-48v-12.8c0-23.79-7.21-45.9-19.57-64.25-20.7-30.75-56-46.93-92.28-46.93zM480 432c0 8.82-7.18 16-16 16H176c-8.82 0-16-7.18-16-16v-12.8c0-16.63 4.88-32.67 14.11-46.38 13.83-20.54 38.4-32.8 65.74-32.8 8.9 0 17.71 1.31 26.19 3.88 17.69 5.37 35.84 8.1 53.96 8.1s36.27-2.72 53.96-8.1a89.887 89.887 0 0 1 26.19-3.88c27.34 0 51.91 12.26 65.74 32.8 9.23 13.71 14.11 29.75 14.11 46.38V432zM96 256c44.18 0 80-35.82 80-80s-35.82-80-80-80-80 35.82-80 80 35.82 80 80 80zm0-128c26.47 0 48 21.53 48 48s-21.53 48-48 48-48-21.53-48-48 21.53-48 48-48zm61.15 172.93C145.27 292.83 131.18 288 116 288H76c-41.91 0-76 35.89-76 80 0 8.84 7.16 16 16 16s16-7.16 16-16c0-26.47 19.75-48 44-48h40c5.55 0 10.81 1.25 15.7 3.3 7.52-8.5 16.07-16 25.45-22.37zM320 288c61.86 0 112-50.14 112-112V32l-56 28-56-28-56 28-56-28v144c0 61.86 50.14 112 112 112zM240 83.78l24 12 56-28 56 28 24-12V128H240V83.78zm0 76.22h160v16c0 44.11-35.89 80-80 80s-80-35.89-80-80v-16z" class=""></path>
+                                    </svg>
+                                <span>follow now</span>
+                                </button>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <div class="owl-nav">
+                        <span class="owl-nav-prev"><i class=" fas fa-angle-double-left fa-2x"></i></span>
+                        <span class="owl-nav-next"> <i class=" fas fa-angle-double-right fa-2x"></i></span>
+                    </div>
+                </div>
+
+
+            </section>
+        </div>
+        <!--------------------- section video ------------------>
+
+        <section class="latest_videos container py-5">
+            <div class="head d-flex justify-content-between">
+                <h3 class=" font-weight-bold">LATEST VIDEOS</h3>
+                <span class="font-weight-bold mr-2" style="color: #7060fe;">see more</span>
+            </div>
+            <div class="row videos ">
+                <div class="col-xl-3 col-lg-4 col-sm-6 px-sm-2  mb-3 mt-md-0  ">
+                    <div class="video1">
+                        <div class="video_layer d-flex p-3 ">
+                            <a href="">
+                                <div class="info d-flex justify-content-between">
+                                    <div class="icon mr-2">
+                                        <svg width="30" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="play-circle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-play-circle fa-w-16 fa-3x">
+                                    <path fill="white" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm115.7 272l-176 101c-15.8 8.8-35.7-2.5-35.7-21V152c0-18.4 19.8-29.8 35.7-21l176 107c16.4 9.2 16.4 32.9 0 42z" class=""></path>
+                                </svg>
+                                    </div>
+                                    <div class="text">
+                                        <p> IT IS A LONG ESTABLISHED FACT THAT AREADER WILL BE DISTRACTED BY THE READABLE CONTENT
+                                        </p>
+                                        <p class="mt-3">2 DAYS AGO</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-4 col-sm-6 px-sm-2 mb-3 mt-md-0   video2">
+                    <div class="box1">
+                        <div class="box1_layer p-3 pt-5 d-flex">
+                            <a href="">
+                                <div class="info d-flex justify-content-between mt-5 ">
+                                    <div class="icon mr-2">
+                                        <svg width="30" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="play-circle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-play-circle fa-w-16 fa-3x">
+                                <path fill="white" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm115.7 272l-176 101c-15.8 8.8-35.7-2.5-35.7-21V152c0-18.4 19.8-29.8 35.7-21l176 107c16.4 9.2 16.4 32.9 0 42z" class=""></path>
+                            </svg>
+                                    </div>
+                                    <div class="text">
+                                        <p>CONTRAY TO POPULAR BELIEF, LOREM IPSUM IS NOT SIMPLY RANDOM TEXT.
+                                        </p>
+                                        <p class="mt-3">2 DAYS AGO</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="box2 mt-3">
+                        <div class="box2_layer p-3 pt-5 d-flex">
+                            <a href="">
+                                <div class="info d-flex justify-content-between mt-5">
+                                    <div class="icon mr-2">
+                                        <svg width="30" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="play-circle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-play-circle fa-w-16 fa-3x">
+                                <path fill="white" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm115.7 272l-176 101c-15.8 8.8-35.7-2.5-35.7-21V152c0-18.4 19.8-29.8 35.7-21l176 107c16.4 9.2 16.4 32.9 0 42z" class=""></path>
+                            </svg>
+                                    </div>
+                                    <div class="text">
+                                        <p> CONTRAY TO POPULAR BELIEF, LOREM IPSUM IS NOT SIMPLY RANDOM TEXT.
+                                        </p>
+                                        <p class="mt-2">2 DAYS AGO</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-xl-3 col-lg-4 col-sm-6 px-sm-2  mb-3 mt-md-0 " d>
+                    <div class="video3">
+                        <div class="video_layer d-flex p-3 ">
+                            <a href="">
+                                <div class="info d-flex justify-content-between">
+                                    <div class="icon mr-2">
+                                        <svg width="30" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="play-circle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-play-circle fa-w-16 fa-3x">
+                                    <path fill="white" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm115.7 272l-176 101c-15.8 8.8-35.7-2.5-35.7-21V152c0-18.4 19.8-29.8 35.7-21l176 107c16.4 9.2 16.4 32.9 0 42z" class=""></path>
+                                </svg>
+                                    </div>
+                                    <div class="text">
+                                        <p> IT IS A LONG ESTABLISHED FACT THAT AREADER WILL BE DISTRACTED BY THE READABLE CONTENT
+                                        </p>
+                                        <p class="mt-2">2 DAYS AGO</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-4 col-sm-6 px-sm-2 mb-3 mt-md-0  video4">
+                    <div class="box1">
+                        <div class="box1_layer p-3 pt-5 d-flex">
+                            <a href="">
+                                <div class="info d-flex justify-content-between mt-5 ">
+                                    <div class="icon mr-2">
+                                        <svg width="30" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="play-circle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-play-circle fa-w-16 fa-3x">
+                                <path fill="white" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm115.7 272l-176 101c-15.8 8.8-35.7-2.5-35.7-21V152c0-18.4 19.8-29.8 35.7-21l176 107c16.4 9.2 16.4 32.9 0 42z" class=""></path>
+                            </svg>
+                                    </div>
+                                    <div class="text">
+                                        <p>CONTRAY TO POPULAR BELIEF, LOREM IPSUM IS NOT SIMPLY RANDOM TEXT.
+                                        </p>
+                                        <p class="mt-3">2 DAYS AGO</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="box2 mt-3">
+                        <div class="box2_layer p-3 pt-5 d-flex">
+                            <a href="">
+                                <div class="info d-flex justify-content-between mt-5">
+                                    <div class="icon mr-2">
+                                        <svg width="30" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="play-circle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-play-circle fa-w-16 fa-3x">
+                                <path fill="white" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm115.7 272l-176 101c-15.8 8.8-35.7-2.5-35.7-21V152c0-18.4 19.8-29.8 35.7-21l176 107c16.4 9.2 16.4 32.9 0 42z" class=""></path>
+                            </svg>
+                                    </div>
+                                    <div class="text">
+                                        <p> CONTRAY TO POPULAR BELIEF, LOREM IPSUM IS NOT SIMPLY RANDOM TEXT.
+                                        </p>
+                                        <p class="mt-2">2 DAYS AGO</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+        <!------------start prime --------------------------->
+        <div class="prime vh-100">
+            <div class="h-100 prime_layer d-flex justify-content-center flex-column">
+                <div class="prime_content container">
+                    <div class="title text-center position-relative d-flex justify-content-center align-items-center px-4">
+                        <h1 class="position-absolute">GO PRIME BECOME A PRO</h1>
+                        <h3 class="position-absolute">GO PRIME BECOME A PRO</h3>
+                    </div>
+                    <div class="box d-flex justify-content-center mt-5 font-weight-bold text-white">
+                        <span>play</span>
+                        <span class="mx-5">computer</span>
+                        <span>win</span>
+                    </div>
+                    <div class="d-flex justify-content-center pt-4">
+                        <button class="btn px-5 font-weight-bold">let's play</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!---------------------------end prime --------------------->
+        <div class="first_footer container" id="esport">
+            <div class="row text-white py-5">
+                <div class="col-lg-3 col-md-6">
+                    <div class="esport">
+                        <h1>Esports</h1>
+                        <ul class="list-unstyled">
+                            <li>PAGE - GAME</li>
+                            <li>PAGE - MATCHFINDER</li>
+                            <li>PAGE - TOURNMENTS</li>
+                            <li>PAGE - LEADERBOARDS</li>
+                            <li>PAGE - EVENTS</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="esport">
+                        <h1>COMPANY</h1>
+                        <ul class="list-unstyled">
+                            <li>PAGE - ABOUT</li>
+                            <li>PAGE - join us</li>
+                            <li>PAGE - sponsors</li>
+                            <li>PAGE - contact</li>
+                            <li>PAGE - teams</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="esport">
+                        <h1>PARTNERS</h1>
+                        <ul class="list-unstyled">
+                            <li>PAGE - faq</li>
+                            <li>PAGE - shop</li>
+                            <li>PAGE - go prime</li>
+                            <li>PAGE - privacy</li>
+                            <li>PAGE - terms</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="esport">
+                        <h1>PARTNERS</h1>
+                        <ul class="list-unstyled">
+                            <li>PAGE - GAME</li>
+                            <li>PAGE - MATCHFINDER</li>
+                            <li>PAGE - TOURNMENTS</li>
+                            <li>PAGE - LEADERBOARDS</li>
+                            <li>PAGE - EVENTS</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer_content container ">
+            <div class="row  justify-content-between py-4 text-white align-items-center ">
+                <div class="col-lg-4 link">
+                    <a href=" ">INFO@CREEPING.COM</a>
+                </div>
+                <div class="col-lg-4 ">
+                    <div class="icons d-flex justify-content-between my-4 my-md-0 ">
+                        <div class="icon_border d-flex align-items-center justify-content-center ">
+                            <div class="icon d-flex justify-content-center align-items-center ">
+                                <svg width="15" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="discord" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-inline--fa fa-discord fa-w-14 fa-9x">
+                                    <path fill="white" d="M297.216 243.2c0 15.616-11.52 28.416-26.112 28.416-14.336 0-26.112-12.8-26.112-28.416s11.52-28.416 26.112-28.416c14.592 0 26.112 12.8 26.112 28.416zm-119.552-28.416c-14.592 0-26.112 12.8-26.112 28.416s11.776 28.416 26.112 28.416c14.592 0 26.112-12.8 26.112-28.416.256-15.616-11.52-28.416-26.112-28.416zM448 52.736V512c-64.494-56.994-43.868-38.128-118.784-107.776l13.568 47.36H52.48C23.552 451.584 0 428.032 0 398.848V52.736C0 23.552 23.552 0 52.48 0h343.04C424.448 0 448 23.552 448 52.736zm-72.96 242.688c0-82.432-36.864-149.248-36.864-149.248-36.864-27.648-71.936-26.88-71.936-26.88l-3.584 4.096c43.52 13.312 63.744 32.512 63.744 32.512-60.811-33.329-132.244-33.335-191.232-7.424-9.472 4.352-15.104 7.424-15.104 7.424s21.248-20.224 67.328-33.536l-2.56-3.072s-35.072-.768-71.936 26.88c0 0-36.864 66.816-36.864 149.248 0 0 21.504 37.12 78.08 38.912 0 0 9.472-11.52 17.152-21.248-32.512-9.728-44.8-30.208-44.8-30.208 3.766 2.636 9.976 6.053 10.496 6.4 43.21 24.198 104.588 32.126 159.744 8.96 8.96-3.328 18.944-8.192 29.44-15.104 0 0-12.8 20.992-46.336 30.464 7.68 9.728 16.896 20.736 16.896 20.736 56.576-1.792 78.336-38.912 78.336-38.912z" class=""></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="icon_border d-flex align-items-center justify-content-center ">
+                            <div class="icon d-flex justify-content-center align-items-center ">
+                                <svg width="15" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="twitch" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-twitch fa-w-16 fa-9x">
+                                    <path fill="white" d="M391.17,103.47H352.54v109.7h38.63ZM285,103H246.37V212.75H285ZM120.83,0,24.31,91.42V420.58H140.14V512l96.53-91.42h77.25L487.69,256V0ZM449.07,237.75l-77.22,73.12H294.61l-67.6,64v-64H140.14V36.58H449.07Z" class=""></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="icon_border d-flex align-items-center justify-content-center ">
+                            <div class="icon d-flex justify-content-center align-items-center ">
+                                <svg width="15" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="twitter" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-twitter fa-w-16 fa-9x">
+                                    <path fill="white" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z" class=""></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="icon_border d-flex align-items-center justify-content-center ">
+                            <div class="icon d-flex justify-content-center align-items-center ">
+                                <svg width="12" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook-f" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="svg-inline--fa fa-facebook-f fa-w-10 fa-9x">
+                                    <path fill="white" d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z" class=""></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class=" col-lg-4 copyright d-flex justify-content-end">
+                    <div class=" font-weight-bold ">
+                        CREEPING . ALL RIGHTS RESEVRED.
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+    <div class="top position-fixed"><a href="#home"><i class="fas fa-angle-double-up text-white"></i></a></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--bootstrap-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js " integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin=" anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js " integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js " integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF " crossorigin="anonymous "></script>
+    <!--owl carosel-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js " integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin=" anonymous " referrerpolicy="no-referrer "></script>
+    <!--isotpe filter plugin-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js " integrity="sha512-Zq2BOxyhvnRFXu0+WE6ojpZLOU2jdnqbrM1hmVdGzyeCa1DgM3X5Q4A/Is9xA1IkbUeDd7755dNNI/PzSf2Pew==" crossorigin=" anonymous " referrerpolicy="no-referrer "></script>
+    <!--custom js-->
+    <script src="js/js.js "></script>
+
+</body>
+
+</html>
