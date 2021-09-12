@@ -16,17 +16,6 @@ html {
     background-color: #7060fe;
     border: none;
 }
-
-@media (min-width: 1200px) {
-    .container,
-    .container-lg,
-    .container-md,
-    .container-sm,
-    .container-xl {
-        max-width: 1300px;
-    }
-}
-
 p {
     margin-bottom: 0!important;
 }
